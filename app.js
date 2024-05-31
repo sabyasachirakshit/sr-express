@@ -20,7 +20,7 @@ const server = http.createServer(app);
 
 const io = socketIo(server, {
   cors: {
-    origin: "https://sr-react-app.onrender.com/", // Update this to your frontend URL if different
+    origin: "*", // Update this to your frontend URL if different
     methods: ["GET", "POST"],
     allowedHeaders: ["Authorization"],
     credentials: true
